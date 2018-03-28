@@ -2,7 +2,7 @@ boolean lastButtonState[6] = {LOW, LOW, LOW, LOW, LOW, LOW};
 boolean buttonState[6] = {LOW, LOW, LOW, LOW, LOW, LOW};
 boolean stepState[3][4] = {{LOW, LOW, LOW, LOW},
                           {LOW, LOW, LOW, LOW},
-                          {LOW, LOW, LOW, LOW}
+                          {HIGH, LOW, LOW, LOW}
                           };
 int buttonPin[6] = {7, 8, 9, 10, 11, 12};
 int ledPin[4] = {2, 3, 4, 5};
@@ -12,6 +12,7 @@ int currentChannel = 0;
 unsigned long lastStepTime = 0;
 int pot = A13;
 int midiNote[3] = {60, 62, 64};
+//adding comment
 
 void setup() {
   Serial.begin(9600);
